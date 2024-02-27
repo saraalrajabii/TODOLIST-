@@ -11,7 +11,7 @@ import {
   ListItemSecondaryAction,
   ListItemText,
   makeStyles,
-  TextField,
+
   Typography,
 } from "@material-ui/core";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
@@ -72,7 +72,7 @@ function App() {
     addButtonEditStyles,
     completedTodoStyles,
   } = useStyles();
-  const [todoText, setTodoText] = useState("");
+  // const [todoText, setTodoText] = useState("");
   const [todoUpdatedText, setTodoUpdatedText] = useState("");
   const [isEditing, setIsEditing] = useState<string | null>(null); // Change to string | null
 
@@ -117,7 +117,7 @@ function App() {
           placeholder="Start typing"
           required
           {...register("todoText")} // <-- Register the input with react-hook-form
-          onChange={(e) => setTodoText(e.target.value)}
+          // onChange={(e) => setTodoText(e.target.value)}
         />
 
         <Button
