@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(48, 49, 49);
+}
+
+.MuiOutlinedInput-root {
+  border: 1px solid;
+  border-color: #ffff !important;
+}
+
+::placeholder {
+  color: #8f8c8c;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Edge 12-18 */
+  color: #8f8c8c;
+}
+
+textarea:focus,
+input:focus {
+  color:#8f8c8c;
+}
+
+input,
+select,
+textarea {
+  color: #ffff;
+}
+
+.empty-list-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background-color: #0202028a;
+  place-items: center;
+}
+.empty-image {
+  height: auto;
+  width: 100px;
+}
+.empty-text {
+  color: #ffff;
+  padding-bottom: 8px;
+}
+
+.ListItem-container {
+  background-color: #0202028a;
+  border-radius: 12px;
+  color: #ffff;
+  margin-bottom: 12px;
+
+}
+.MuiListItem-root{
+  display: block !important;
+    }
+
+.List-Item-Checkbox {
+  padding: 0px 12px;
+}
+.List-Item-text {
+  color: #ffff;
+  /* padding: 6px 0px; */
+}
+
+.marginT {
+  margin-top: 18px;
+}
+
+.red {
+  color: red;
+}
+
+
+.gray {
+  color: #8d8989;
+}
+
+.MuiTypography-body1 {
+  font-size: 12px !important;
+}
